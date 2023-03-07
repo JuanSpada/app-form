@@ -1,0 +1,42 @@
+{
+  "name": "@vanxa/auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec 'babel-node src/index.js'",
+    "build": "babel src -d dist",
+    "start": "node dist/index.js"
+  },
+  "prisma": {
+    "schema": "../../packages/database/prisma/schema.prisma",
+    "generator": {
+      "name": "javascript",
+      "output": "src/generated/prisma-client"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.10.1",
+    "@vanxa/database": "file:../../packages/database",
+    "@vanxa/middleware": "file:../../packages/middleware",
+    "apollo-datasource-mongodb": "^0.5.4",
+    "apollo-server": "^3.11.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "graphql": "^15.8.0",
+    "jsonwebtoken": "^9.0.0",
+    "middleware": "*",
+    "prisma": "^4.10.1",
+    "rimraf": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  }
+}

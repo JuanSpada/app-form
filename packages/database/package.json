@@ -1,0 +1,20 @@
+{
+  "name": "@vanxa/database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npx prisma generate",
+    "build": "npx prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.10.1",
+    "apollo-server": "^3.11.1"
+  },
+  "devDependencies": {
+    "prisma": "^4.10.1"
+  }
+}
